@@ -9,7 +9,7 @@ import styled from '@emotion/styled'
 import LegacyMenu from './legacy/LegacyMenu.jsx'
 
 // 2. Import Components and Elements
-import { Button, Icon } from 'dnb-ui-lib/components'
+import { Button, Input, Icon } from 'dnb-ui-lib/components'
 import { H2, H4, P, Code } from 'dnb-ui-lib/elements'
 import { bell } from 'dnb-ui-lib/icons'
 
@@ -40,6 +40,7 @@ export default class App extends PureComponent {
           </h4>
 
           <Button text="Crying Button 😢" />
+          <Input label="Input:" value="Input ..." />
         </LegacyCodeExample>
 
         <Cases />
@@ -61,6 +62,7 @@ const Cases = () => (
         And I'm a <Code>{`<h2>`}</Code> <Icon icon={bell} size="auto" />
       </H2>
       <Button text="I'm looking good" icon="chevron_right" />
+      <Input label="Input:" value="Input ..." />
       <br />
       <br />
       <Code>{'</div>'}</Code>
@@ -88,6 +90,7 @@ const Cases = () => (
         icon="add"
         icon_position="left"
       />
+      <Input label="Input:" value="Input ..." />
       <br />
       <br />
       <Code>{'</div>'}</Code>
